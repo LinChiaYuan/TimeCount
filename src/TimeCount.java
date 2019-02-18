@@ -15,7 +15,6 @@ public class TimeCount
     public static void main(String[] args)
     {
         Calendar cal = Calendar.getInstance();
-
         cal.set(2018,5,15,13,5,49);
 
         Calendar c = Calendar.getInstance();
