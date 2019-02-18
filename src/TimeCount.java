@@ -15,10 +15,8 @@ public class TimeCount
     public static void main(String[] args)
     {
         Calendar cal = Calendar.getInstance();
-        Calendar cal2 = Calendar.getInstance();
 
-        cal.set(2002,2,30,1,1,1);
-        cal2.set(2018,5,15,13,5,49);
+        cal.set(2018,5,15,13,5,49);
 
         Calendar c = Calendar.getInstance();
         int year = c.get(Calendar.YEAR);
@@ -54,7 +52,7 @@ public class TimeCount
         System.out.println("NowTime : " + NowTime);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-        Date d = cal2.getTime();
+        Date d = cal.getTime();
 
         long daterange = 0;
         try
