@@ -6,25 +6,15 @@ Java 計算時間方法
 
 ## 寫法
 
-在List的物件 implements Comparable<Student>
+使用 Calendar 取得現在時間
 
-並設定sort用的比較變數
+Calendar.YEAR
+Calendar.MONTH ( 0 = 1月)
+Calendar.DATE
+Calendar.HOUR_OF_DAY
+Calendar.MINUTE
+Calendar.SECOND
 
-如 private int id = 0;
+再以 long 相減取得差
 
-再加入比較 function
-
-@Override
-public int compareTo(Student o)
-{
-    return  o.id - this.id;
-}
-
-***
-o.id - this.id 改成  this.id - o.id;  
- 
-則變成遞減
-***
-
-對有 implements 的物件使用下列 function 便可以自動 sort
-Collections.sort(ObjectList);
+再轉回時間
